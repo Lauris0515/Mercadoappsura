@@ -27,18 +27,18 @@ let peticion={
      nombreUsuario.classList.add("text-center")
      nombreUsuario.textContent=usuario.nombres
 
-     let cedula=document.createElement("h5")
-     cedula.classList.add("text-center")
-     cedula.textContent=usuario.cedula
+     let cedulaUsuario=document.createElement("h5")
+     cedulaUsuario.classList.add("text-center")
+     cedulaUsuario.textContent=usuario.cedula
 
-     let correo=document.createElement("h5")
-     correo.classList.add("text-center")
-     correo.textContent=usuario.correo
+     let correoUsuario=document.createElement("h5")
+     correoUsuario.classList.add("text-center")
+     correoUsuario.textContent=usuario.correo
 
     
     tarjeta.appendChild(nombreUsuario)
-    tarjeta.appendChild(cedula)
-    tarjeta.appendChild(correo)
+    tarjeta.appendChild(cedulaUsuario)
+    tarjeta.appendChild(correoUsuario)
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
     
