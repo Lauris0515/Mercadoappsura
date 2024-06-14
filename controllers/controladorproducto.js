@@ -28,8 +28,18 @@ fetch(url,peticion)
      nombreProducto.classList.add("text-center")
      nombreProducto.textContent=producto.nombre
 
+     let precioProducto=document.createElement("h4")
+     precioProducto.classList.add("text-center")
+     precioProducto.textContent="$"+producto.precio
+
+     let calificacionProducto=document.createElement("h6")
+     calificacionProducto.classList.add("text-center")
+     calificacionProducto.textContent="calificacion"+producto.calificacion
+
     tarjeta.appendChild(imagen)
     tarjeta.appendChild(nombreProducto)
+    tarjeta.appendChild(precioProducto)
+    tarjeta.appendChild(calificacionProducto)
     columna.appendChild(tarjeta)
     fila.appendChild(columna)
     })
